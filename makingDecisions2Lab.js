@@ -20,7 +20,7 @@ console.log(arr)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
+let family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 // Do not edit the code above.
 
 /*
@@ -28,13 +28,15 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i = 0; i <family.length; i++){
+  console.log(family[i]);
+}
 
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+let nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
 // Do not edit the code above.
 
@@ -43,7 +45,12 @@ let evensArr = []
 */
 
 //Code Here
-
+for ( let j = 0; j < nums.length; j++){
+  if( nums[j] % 2 === 0){
+  evensArr.unshift(nums[j]);
+}
+}
+console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
