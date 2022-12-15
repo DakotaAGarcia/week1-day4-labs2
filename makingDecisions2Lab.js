@@ -1,5 +1,5 @@
 // For problems 1-2 use the following lines of code:
-var arr = [10,20,30,40,50,60]
+//var arr = [10,20,30,40,50,60]
 
 ////////// PROBLEM 1 //////////
 /*
@@ -7,7 +7,7 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-let firstItem = arr[0]
+//let firstItem = arr[0]
 
 ////////// PROBLEM 2 //////////
 /*
@@ -15,12 +15,12 @@ let firstItem = arr[0]
 */
 
 //Code Here
-let lastItemRemoved = arr.pop()
-console.log(arr)
+//let lastItemRemoved = arr.pop()
+//console.log(arr)
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-let family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
+//let family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 // Do not edit the code above.
 
 /*
@@ -28,16 +28,16 @@ let family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for(let i = 0; i <family.length; i++){
-  console.log(family[i]);
-}
+// for(let i = 0; i <family.length; i++){
+//   console.log(family[i]);
+// }
 
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-let nums = [1,2,3,6,22,98,45,23,22,12];
-let evensArr = []
+// let nums = [1,2,3,6,22,98,45,23,22,12];
+// let evensArr = []
 // Do not edit the code above.
 
 /*
@@ -45,12 +45,12 @@ let evensArr = []
 */
 
 //Code Here
-for ( let j = 0; j < nums.length; j++){
-  if( nums[j] % 2 === 0){
-  evensArr.unshift(nums[j]);
-}
-}
-console.log(evensArr);
+// for ( let j = 0; j < nums.length; j++){
+//   if( nums[j] % 2 === 0){
+//   evensArr.unshift(nums[j]);
+// }
+// }
+// console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
@@ -64,18 +64,18 @@ var score = 74
 */
 
 //Code Here
-if (score>= 90){
-  console.log("A")
-}else if(score >= 80 && score < 90){
-  console.log("B")
-}
-else if(score >= 70 && score < 80){
-  console.log("C")
-}else if(score >= 60 && score < 70){
-  console.log("D")
-}else{
-  console.log("F")
-}
+// if (score>= 90){
+//   console.log("A")
+// }else if(score >= 80 && score < 90){
+//   console.log("B")
+// }
+// else if(score >= 70 && score < 80){
+//   console.log("C")
+// }else if(score >= 60 && score < 70){
+//   console.log("D")
+// }else{
+//   console.log("F")
+// }
 
 ////////// Intermediate Problems //////////
 
@@ -90,7 +90,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-let someNum = [4];
+// let someNum = [4];
 
 
 ////////// PROBLEM 7 //////////
@@ -99,7 +99,11 @@ let someNum = [4];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+// if(myFavoriteNumbers.length < 7){
+//   console.log("there are not enough elements in this array")
+// }else{
+//   someNum = myFavoriteNumbers[6];
+// }
 
 ////////// PROBLEM 8 //////////
 
@@ -110,8 +114,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
-
+// for(let i = 0; i < listOfNumbers.length; i++){
+// if(listOfNumbers[i] % 3 === 0){
+//   console.log( `${listOfNumbers[i]} is divisible by 3`);
+// }
+// }
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
 var letters = ['A', 'B', 'C', 'D', 'E'];
@@ -122,7 +129,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for(let i= letters.length; i >= 0; i--){
+  console.log(letters[i])
+}
 
 ////////// Advanced Problems //////////
 
@@ -144,7 +153,23 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+switch (letterGrade){
+  case "A":
+    console.log("the student is doing excellently");
+    break;
+  case "B":
+    console.log("the student is doing well")
+    break;
+    case "C":
+      console.log("the student is doing alright");
+      break;
+    case "D":
+      console.log("the student is not doing very well")
+      break; 
+      default:
+        console.log("The student is failing");
+        break; 
+}
 
 
 ////////// PROBLEM 11 //////////
